@@ -29,7 +29,7 @@ add column is_over_18 bit;
 
 update members
 set is_over_18 = 1
-where dob = '1990-09-23';
+where card_number = '10000001';
 
 
 
