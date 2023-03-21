@@ -1,7 +1,7 @@
 use Library;
 
 create table book_author(
-	isbn char(13),
+	isbn char(13) primary key,
     author_id smallint,
     primary key (isbn),
     constraint fk_isbn_item foreign key (isbn) references item (isbn),
