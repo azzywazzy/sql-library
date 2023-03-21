@@ -16,4 +16,11 @@ But what Lyra doesn't know is that to help one of them will be to betray the oth
 A masterwork of storytelling and suspense, Philip Pullman's award-winning The Golden Compass is the first in the His Dark Materials series, which continues with The Subtle Knife and The Amber Spyglass.
 ", 32);
 
-select * from item
+select * from item;
+
+alter table item
+add column is_available bit;
+
+update item
+set is_available = 1
+where isbn = '9780440238133'
