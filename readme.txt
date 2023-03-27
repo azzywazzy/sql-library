@@ -38,6 +38,14 @@ renewal_date date() not null
 account_status enum('Active', 'Inactive') not null
 	status of the account, inactive is renewal date is in the past
 
+Author:
+Fields:
+author_id smallint not null primary key
+author_first varchar(50)
+	first name of the author
+author_last varchar(50)
+	surname of the author
+
 Items:
 Description:
 	holds details for each item (unique ISBN), there is a separate table to capture multiple copies of the same ISBN
@@ -46,15 +54,19 @@ isbn char(13) not null primary key
 	ISBN (international standard book number) is unique for each specific edition of a book title from one specific publisher
 title tiny text not null
 	title of the book
-author_first varchar(50)
-	first name of the author
-author_last varchar(50)
-	surname of the author
 description text
 	a description of the book, may be multiple paragraphs long
-category set()
+category_id
 	TBC what options category will have
-... more to add
+
+Book_Author:
+Description:
+	table to connect the many-to-many relationships between authors and books (items)
+Fields:
+isbn char(13) not null primary key 
+	foreign key (isbn) references items(isbn)
+author_id smallint not null 
+	foreign key (author_id) references author(author_id)
 
 Copies:
 Description:
