@@ -1,6 +1,6 @@
-create database Library;
+create database library;
 
-use Library;
+use library;
 
 create table members(
 	card_number char(8) not null unique primary key,
@@ -34,9 +34,9 @@ create table item(
 
 create table book_author(
 	book_author_id int primary key,
-    isbn char(13),
+    blah char(13),
     author_id smallint,
-    foreign key(isbn) references item(isbn),
+    foreign key(blah) references item(isbn),
 	foreign key(author_id) references author(author_id)
     );
 
@@ -52,7 +52,7 @@ create table location_id(
 create table copy(
 	item_barcode char(8) not null unique primary key,
 	isbn char(13),
-	branch_id tinyint,
+	bracnch_id tinyint,
 	foreign key (branch_id) references location_id(branch_id),
 	foreign key (isbn) references item(isbn)
     );
