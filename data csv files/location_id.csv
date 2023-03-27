@@ -1,6 +1,6 @@
 branch_id,branch_name,address_1,address_2,postcode,phone_number
-1,Central Library,Calverley Street,Leeds,LS1 3AB,0113 378 5005 
-2,Garforth Library and One Stop Centre,Lidgett Lane,Garforth,LS25 1EH,NULL
-3,Boston Spa Library,High Street,Leeds,LS23 6BH,NULL
-4,Horsforth Community Hub and Library,Town Street,Horsforth,LS18 5BL,NULL
-5,Yeadon Library and One Stop Centre,Town Hall Square,Yeadon,LS19 7PP,NULL
+1,Central Library,Calverley Street,Leeds,LS1 3AB,0113 378 5005
+2,Garforth Library and One Stop Centre,Lidgett Lane,Garforth,LS25 1EH,0113 378 2002
+3,Boston Spa Library,High Street,Leeds,LS23 6BH,0113 378 3003
+4,Horsforth Community Hub and Library,Town Street,Horsforth,LS18 5BL,0113 378 4004
+5,Yeadon Library and One Stop Centre,Town Hall Square,Yeadon,LS19 7PP,0113 378 6006
